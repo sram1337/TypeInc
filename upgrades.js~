@@ -1,0 +1,17 @@
+initUpgrades = function(){
+    upgrades = {
+        'AutoType-Professional': {
+                        'cost':1,
+                        'levelUp': function(){
+                            this.owned++;
+                            this.cost = Math.round10(1.5*(this.cost),-2);
+                        },
+                        'cooldown':1000,
+                        'owned':0,
+                        'requires':[],
+                        'description':'Software that re-types the last letter you typed on your keyboard. Subsequent versions offer an eerily consistent, linear speed increase. Coded by your good friends over at Microscale-Software(tm).',
+                        'benefit':'+1 lps'
+        }
+    }
+    return upgrades;
+}

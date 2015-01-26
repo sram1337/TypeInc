@@ -1,0 +1,209 @@
+html{
+    height: 100%
+    margin: 0;
+    padding:0;
+}
+body{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0; 
+}
+div#main{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 50px;
+    width: 1000px;
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 99%;
+    background: white;
+    font-family: Sans-Serif;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #888;
+}
+div#letterBankTray{
+    float: left;
+    width: 155px;
+    text-align: center;
+}
+div#letterPriceTray{
+    float: right;
+    width: 155px;
+    text-align: center;
+    //border: solid black 1px;
+}
+div#letterBank table{
+    text-align: left;
+    margin: 0 auto;
+}
+div#letterPrice table{
+    text-align: left;
+    margin: 0 auto;
+}
+div#money{
+    width: 30%;
+    margin: 35px auto 0 auto;
+    text-align: center;
+}
+div#money #cash{
+    font-size: 3em;
+    font-weight: bold;
+}
+div#money #lps{
+    font-weight:bold;
+}
+tr {
+    margin: -8px;
+}
+td.increment{
+    color: green;
+    font-weight: bolder;
+    font-size: .75em;
+}
+td.decrement{
+    color: red;
+    font-weight: bolder;
+    font-size: .75em;
+}
+tr.maxPrice{
+    color: #0062FF;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#keyboard{
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 250px;
+    width: 540px;
+}
+.tray{
+    display: inline-block;
+    margin: 10px auto;
+    background: #f0f0f0;
+    box-shadow: inset 3px 3px 3px #888;
+}
+.insert{
+    margin: 5px;
+    padding: 10px;
+    background: white;
+    box-shadow: 3px 3px 3px #888888;
+}
+#dashboard{
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 400px;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 540px;
+    background: #f0f0f0;
+    padding: 0 9px 0 0;
+    box-shadow: inset 3px 3px 3px #888;
+}
+#dashboard::-webkit-scrollbar {
+ display: none;
+}
+.particle{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.upgrade{
+    margin: 5px auto;
+    width: 98%;
+    position: relative;
+    display: inline-block;
+    background: white;
+    left: 50%;
+    transform: translate(-50%,0%);
+    box-shadow: 3px 3px 3px #888888;
+}
+.upgradeName{
+    padding: 10px;
+    float: left;
+    clear: left;
+    font-size: 1.5em;
+}
+.upgradeCost{
+    padding: 10px;
+    float: right;
+    clear:right;
+    font-size: 1.5em;
+}
+.upgradeBenefit{
+    padding: 0px 10px 10px 0px;
+    float: right;
+    clear: right;
+}
+.upgradeDescription{
+    padding: 0px 0px 10px 10px;
+    float: left;
+    clear: left;
+}
+.unaffordable{
+    color: #ccc;
+}
+#bankToggleTray{
+    width: 150px;
+    display: inline-block;
+    margin: 10px;
+    float:left;
+}
+#volatilitySlideTray{
+    display: inline-block;
+    margin: 10px;
+    float:right;
+}
+#volatilitySlideTray span{
+    width: 150px;
+    padding: 2px;
+    float: right;
+    clear: both;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+#volatilitySlideTray #volatilitySlide.ui-slider{
+    width: 150px;
+    height: 9px;
+    padding: 0px;
+    margin: 1px 5px 10px 5px;
+    float: right;
+    clear: right;
+}
+#letterBank table{
+    display: inline-block;
+}
+#sellButtonTray{
+    position: relative;
+    top: -9px;
+    width: 35px;
+}
+.sellButton{
+    font-size: .76em;
+    margin: 3px;
+    padding: 1px 3px;
+}
+.ui-button:active{
+    background: #888;
+}
+.ui-button:hover{
+    border: 1px solid #888;
+}
+.ui-button.unaffordable{
+    background: #fff;
+}
