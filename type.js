@@ -9,7 +9,7 @@ INIT_PARTICLE_TOP_OFFSET = 0;
 INIT_PARTICLE_LEFT_OFFSET = -15;
 PARTICLE_UPDATE_FREQUENCY = 15;
 PARTICLE_UPDATE_LEFT_OFFSET = -3;
-PARTICLE_DISAPPEAR_CHANCE = 0.015;
+PARTICLE_DISAPPEAR_CHANCE = 0.025;
 UPGRADE_TAB_UPDATE_FREQUENCY = 500;
 UPGRADE_PROC_FREQUENCY = 15;
 PLAYER_VOLATILITY_MULTIPLIER = 0.7;
@@ -74,7 +74,7 @@ var moveParticles = function(){
     var particles = document.getElementsByClassName('particle');
     for(var i=0; i<particles.length; i++){
         currParticle = particles[i];
-        if(Math.random() < PARTICLE_DISAPPEAR_CHANCE){
+        if(Math.random() < PARTICLE_DISAPPEAR_CHANCE || particles.length > 50){
             document.getElementsByTagName('body')[0].removeChild(currParticle);
             continue;
         }
